@@ -19,7 +19,7 @@ body { font-family: 'Inter', sans-serif; background:#F9FAFB; color:#111827; line
 .btn-secondary { background:#fff; color:#4F46E5; border:2px solid #4F46E5; }
 .btn-secondary:hover { background:#E0E7FF; transform:translateY(-2px); }
 
-/* Headers & Hero */
+/* Hero Section */
 header.page-hero, header.splash-hero {
   min-height:100vh;
   display:flex;
@@ -41,9 +41,6 @@ section {
   margin:0 auto;
 }
 section h2 { text-align:center; font-size:2rem; margin-bottom:2rem; color:#111827; }
-section ul { list-style:none; display:flex; flex-wrap:wrap; justify-content:center; }
-section ul li { background:#fff; margin:0.5rem; padding:1rem 2rem; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.06); flex:1 1 200px; text-align:center; transition:transform 0.3s ease; }
-section ul li:hover { transform:translateY(-4px); }
 
 /* Steps / Cards */
 .steps {
@@ -62,6 +59,25 @@ section ul li:hover { transform:translateY(-4px); }
 .step:hover { transform:translateY(-5px); box-shadow:0 8px 24px rgba(0,0,0,0.12); }
 .step h3 { margin-bottom:1rem; color:#4F46E5; }
 .step p { color:#6B7280; }
+.step-icon { color:#4F46E5; margin-bottom:1rem; }
+
+/* Benefits / Cards */
+section ul { list-style:none; display:flex; flex-wrap:wrap; justify-content:center; padding:0; }
+section ul li {
+  background:#fff; 
+  margin:0.5rem; 
+  padding:1rem 2rem; 
+  border-radius:12px; 
+  box-shadow:0 4px 12px rgba(0,0,0,0.06); 
+  flex:1 1 200px; 
+  text-align:center; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  transition:transform 0.3s ease;
+}
+section ul li:hover { transform:translateY(-4px); }
+.benefit-icon { color:#4F46E5; margin-right:0.5rem; vertical-align:middle; }
 
 /* Forms */
 form {
@@ -80,15 +96,11 @@ form input {
 form button { align-self:center; }
 
 /* Footer (optional) */
-footer {
-  text-align:center;
-  padding:2rem 1rem;
-  color:#6B7280;
-  font-size:0.875rem;
-}
+footer { text-align:center; padding:2rem 1rem; color:#6B7280; font-size:0.875rem; }
 
 /* Responsive */
 @media (max-width:600px){
   header.page-hero h1, header.splash-hero h1 { font-size:2rem; }
   section { padding:3rem 1rem; }
+  section ul li { flex:1 1 100%; }
 }
